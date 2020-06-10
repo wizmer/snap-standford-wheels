@@ -8,6 +8,7 @@ env:
     # pip dependencies to _test_ your project.  Include any dependencies
     # that you need, that are also specified in BUILD_DEPENDS, this will be
     # a separate install.
+    - SNAPROOT=${TRAVIS_BUILD_DIR}/snap
     - TEST_DEPENDS="numpy nose"
     - PLAT=x86_64
     - UNICODE_WIDTH=32
@@ -35,8 +36,6 @@ cache:
   directories:
     - $HOME/.cache/pip
     - $HOME/Library/Caches/Homebrew
-env:
-  - SNAPROOT=${TRAVIS_BUILD_DIR}/snap
 jobs:
   include:
     # - os: linux
