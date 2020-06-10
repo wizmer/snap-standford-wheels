@@ -3,4 +3,4 @@
 	url = https://github.com/matthew-brett/multibuild.git
 [submodule "snap-python"]
 	path = snap-python
-	url = git@github.com:wizmer/snap-python.git
+	url = https://github.com/wizmer/snap-python.git
