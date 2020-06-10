@@ -35,7 +35,8 @@ cache:
   directories:
     - $HOME/.cache/pip
     - $HOME/Library/Caches/Homebrew
-
+env:
+  - SNAPROOT=${TRAVIS_BUILD_DIR}/snap
 jobs:
   include:
     # - os: linux
