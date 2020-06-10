@@ -83,19 +83,21 @@ jobs:
     #   env:
     #     - MB_PYTHON_VERSION=3.8
 
+
+
 before_install:
-    - echo ${SNAPROOT}
     - source multibuild/common_utils.sh
     - source multibuild/travis_steps.sh
-    - clean_code $REPO_DIR $BUILD_COMMIT
     - before_install
 
 install:
     # Maybe get and clean and patch source
+    - clean_code $REPO_DIR $BUILD_COMMIT
     - build_wheel $REPO_DIR $PLAT
 
 script:
     - install_run $PLAT
+
 
 # after_success:
 #     # Copy compiled wheels to dist/ where Travis `dpl` tool can find them and upload to PyPI
