@@ -4,3 +4,6 @@
 [submodule "snap-python"]
 	path = snap-python
 	url = https://github.com/wizmer/snap-python.git
+[submodule "snap"]
+	path = snap
+	url = https://github.com/snap-stanford/snap.git
