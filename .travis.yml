@@ -44,9 +44,9 @@ jobs:
     #   env:
     #     - MB_PYTHON_VERSION=2.7
     #     - PLAT=i686
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.6
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.6
     # - os: linux
     #   env:
     #     - MB_PYTHON_VERSION=3.6
@@ -70,10 +70,10 @@ jobs:
     #   language: generic
     #   env:
     #     - MB_PYTHON_VERSION=2.7
-    # - os: osx
-    #   language: generic
-    #   env:
-    #     - MB_PYTHON_VERSION=3.6
+    - os: osx
+      language: generic
+      env:
+        - MB_PYTHON_VERSION=3.6
     # - os: osx
     #   language: generic
     #   env:
