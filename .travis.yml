@@ -74,7 +74,6 @@ jobs:
       language: generic
       env:
         - MB_PYTHON_VERSION=3.6
-        - SNAPROOT=${TRAVIS_BUILD_DIR}/snap
 
     # - os: osx
     #   language: generic
