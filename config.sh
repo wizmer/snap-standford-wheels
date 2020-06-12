@@ -6,5 +6,6 @@ function pre_build {
 
 function run_tests {
     python --version
-    python -c 'import sys; import snap'
+    pip install nose
+    nosetests test
 }
