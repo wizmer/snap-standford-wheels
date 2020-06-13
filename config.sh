@@ -7,6 +7,5 @@ function pre_build {
 function run_tests {
     python --version
     pip install nose
-    echo $REPO_DIR
-    nosetests $REPO_DIR/test
+    nosetests ../snap-python/test
 }
