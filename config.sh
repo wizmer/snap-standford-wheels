@@ -7,5 +7,6 @@ function pre_build {
 function run_tests {
     python --version
     pip install nose
-    nosetests test
+    echo $REPO_DIR
+    nosetests $REPO_DIR/test
 }
